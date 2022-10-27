@@ -125,11 +125,12 @@ a:hover {
   padding-left: 47.5%;
   padding-right: 45%;
   gap: 15px;
+  padding-bottom: 3%;
 }
 .footer {
   display: flex;
   justify-content: space-between;
-  padding-top: 10%;
+  padding-top: 3%;
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 3%;
@@ -179,6 +180,9 @@ a:hover {
   .share {
     display: none;
   }
+}
+.center {
+  font-family: Helvetica ;
 }
 
 

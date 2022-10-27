@@ -68,9 +68,10 @@ function Icons() {
 
 function Footer() {
   return (
+    <div>
+    <hr width="70%" color='#D0D5DD'/>
     <div className='footer'>
   
-      
       <div className='zuri'>
       <img src={zuri} className="zuriImg" alt="" />
       </div>
@@ -80,6 +81,7 @@ function Footer() {
       <div className='ingressive'>
       <img src={ingressive} className="ingressiveImg" alt="" />
       </div>
+    </div>
     </div>
   )
 }
