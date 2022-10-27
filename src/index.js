@@ -68,7 +68,7 @@ function Icons() {
 function Footer() {
   return (
     <div className='footer'>
-      <hr width="80%" height="2px"/>
+      <hr width="80%" />
       <div className='zuri'>
       <img src={zuri} className="zuriImg" alt="" />
       </div>
