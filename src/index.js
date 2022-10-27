@@ -8,17 +8,29 @@ import git from './github.png'
 import zuri from './zuri.png'
 import ingressive from './ingressive.png'
 import imgHover from './imgHover.png'
+import threedot from './threedot.png'
+import share from './share.png'
 
-function App() {
+
+
+function Top() {
   return (
     <div className="App">
       <header className="App-header">
         
+      <div className='shareBar'>
+          <img src={share} className="share" alt="" />
+
+          <img src={threedot} className="threedot" alt="" />
+        </div>
+
         <div className='img'>
           <img src={profileImg} className="profileImg" alt="" />
 
           <img src={imgHover} className="imgHover" alt="" />
         </div>
+
+        
 
         <h2>Annette Black</h2>
 
@@ -47,8 +59,8 @@ function Link(props) {
 function Icons() {
   return (
     <div className='icons-btn'>
-    <img src={slack} className="icon" alt="" />
-    <img src={git} className="icon" alt="" />
+    <a href='https://github.com/Adetomiwa01/profile'> <img src={slack} className="icon" alt="" /></a>
+    <a href='https://github.com/Adetomiwa01/profile'><img src={git} className="icon" alt="" /></a>
     </div>
   )
 }
@@ -84,7 +96,7 @@ function Post() {
     
     return (
       <div class="center">
-        <App/>
+        <Top/>
         <div>
           {cards}
         </div>
