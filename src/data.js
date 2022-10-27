@@ -4,7 +4,8 @@ const data =  [
     {
         id: 1,
         location: "Twitter Link",
-        url: "https://google.com"
+        url: "https://twitter.com/Johnson75069541",
+
     },
     {
         id: 2,
