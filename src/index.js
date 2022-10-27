@@ -61,6 +61,7 @@ function Icons() {
     <div className='icons-btn'>
     <a href='https://github.com/Adetomiwa01/profile'> <img src={slack} className="icon" alt="" /></a>
     <a href='https://github.com/Adetomiwa01/profile'><img src={git} className="icon" alt="" /></a>
+    
     </div>
   )
 }
@@ -68,7 +69,8 @@ function Icons() {
 function Footer() {
   return (
     <div className='footer'>
-      <hr width="80%" />
+  
+      
       <div className='zuri'>
       <img src={zuri} className="zuriImg" alt="" />
       </div>
