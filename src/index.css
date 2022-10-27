@@ -5,9 +5,154 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  text-align: center;
+  margin-top: 10%;
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.img {
+  display: block;
+ 
+  margin-left: 100px;
+}
+  img:hover {
+ 
+  }
+  .profileImg {
+    height: 120px;
+    position: block;
+  }
+  .imgHover {
+    position: block;
+    transition: .5s ease;
+    opacity:0;
+    height: 100px;
+  }
+
+  .img:hover .imgHover {
+    opacity: 1;
+    margin-left: -200px;
+    height: 120px;
+    
+  }
+  
+ h2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 30px;
+  text-align: center;
+  color: #101828;
+}
+h2:hover {
+  -webkit-transform: scale(1.3);
+	transform: scale(1.1);
+  letter-spacing: 2px;
+}
+.links {
+  margin-top: 30px;
+  background: #EAECF0;
+  padding-bottom: 10px;
+  color: #2C3333;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  height: 66px;
+  border: 1px solid #EAECF0;
+  border-radius: 8px;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.links:hover {
+  box-shadow: 1px 1px 5px #D8D9CF;
+  background: #D0D5DD
+}
+
+h5{
+  font-weight: 500;
+}
+a {
+  color: #101828;
+  text-decoration: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+a:hover {
+  color: #665A48;
+}
+.icons-btn {
+  display: flex;
+  padding-top: 40px;
+  padding-left: 47.5%;
+  padding-right: 45%;
+  gap: 15px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 3%;
+}
+.zuri {
+  padding-top: 15px;
+}
+.ingressive {
+  padding-top: 5px;
+}
+.icon:hover {
+  -webkit-transform: scale(1.4);
+	transform: scale(1.3);
+}
+@media (max-width:700px) {
+  .footer{
+    padding-left: 10%;
+    padding-top: 15%;
+    line-height: 2px;
+    flex-direction: column;
+  }
+  .icons-btn {
+    padding-left: 43% ;
+  }
 }

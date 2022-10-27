@@ -1,17 +1,101 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import profileImg from './profileImg.png'
+import data from './data'
+import slack from './slack.png'
+import git from './github.png'
+import zuri from './zuri.png'
+import ingressive from './ingressive.png'
+import imgHover from './imgHover.png'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        
+        <div className='img'>
+          <img src={profileImg} className="profileImg" alt="" />
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+          <img src={imgHover} className="imgHover" alt="" />
+        </div>
+
+        <h2>Annette Black</h2>
+
+      </header>
+    </div>
+
+    
+  );
+
+}
+
+function Link(props) {
+  return (
+    <div className='links'>
+    <a href={props.url} >
+      
+
+      <h5>{props.location}</h5>
+      
+    </a>
+    </div>
+  )
+}
+
+
+function Icons() {
+  return (
+    <div className='icons-btn'>
+    <img src={slack} className="icon" alt="" />
+    <img src={git} className="icon" alt="" />
+    </div>
+  )
+}
+
+function Footer() {
+  return (
+    <div className='footer'>
+
+      <div className='zuri'>
+      <img src={zuri} className="zuriImg" alt="" />
+      </div>
+
+      <p>HNG Intership 9 Front-End Task</p>
+
+      <div className='ingressive'>
+      <img src={ingressive} className="ingressiveImg" alt="" />
+      </div>
+    </div>
+  )
+}
+
+
+function Post() {
+
+    const cards = data.map(items => {
+    return (
+      <Link 
+          key={items.id}
+          {...items}
+    />
+    )
+    }) 
+    
+    return (
+      <div class="center">
+        <App/>
+        <div>
+          {cards}
+        </div>
+        <Icons/>
+        <Footer/>
+      </div>
+    )
+  }
+
+
+
+
+const root = ReactDOM.createRoot(document.getElementById("root"))
+root.render(<Post/>) 
