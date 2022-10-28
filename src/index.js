@@ -25,7 +25,7 @@ function Top() {
         </div>
 
         <div className='img'>
-          <img src={profileImg} className="profileImg" alt="" />
+          <img src={profileImg} className="profile_Img" alt="" />
 
           <img src={imgHover} className="imgHover" alt="" />
         </div>
