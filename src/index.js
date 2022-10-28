@@ -25,9 +25,9 @@ function Top() {
         </div>
 
         <div className='img'>
-          <img src={profileImg} className="profile_Img" alt="" />
+          <img src={profileImg} className="profile_Img" id='profile_Img' alt="" />
 
-          <img src={imgHover} className="imgHover" alt="" />
+          <img src={imgHover} className="imgHover" alt=""  />
         </div>
 
         
@@ -44,8 +44,8 @@ function Top() {
 
 function Link(props) {
   return (
-    <div className='links'>
-    <a href={props.url} title={props.title} >
+    <div className='links' >
+    <a href={props.url} title={props.title} id={props.id} >
       
 
       <h5>{props.location}</h5>
